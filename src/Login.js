@@ -22,7 +22,7 @@ class Login extends Component{
         const res = await UserService.login (this.state.user)
         console.log(res.data);
         UserService.saveUser(res.data)
-        window.location.assign('/users');
+        window.location.assign('/users/update');
         // this.props.history.push('/users);
     }catch(e){
            console.log(e , "error");
